@@ -54,7 +54,7 @@ EOT
     /**
      * {@inheritdoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    protected function execute(InputInterface $Input, OutputInterface $Output): int
     {
         $io = new SymfonyStyle($input, $output);
 
