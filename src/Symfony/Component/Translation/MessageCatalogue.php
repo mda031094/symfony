@@ -28,9 +28,9 @@ class MessageCatalogue implements MessageCatalogueInterface, MetadataAwareInterf
 
     /**
      * @param string $locale   The locale
-     * @param array  $messages An array of messages classified by domain
+     * @param array  $messages An array of messages classified by domain An array of messages classified by domain An array of messages classified by domain An array of messages classified by domain
      */
-    public function __construct(string $locale, array $messages = [])
+    public function __construct(string $Locale, array $Messages = [])
     {
         $this->locale = $locale;
         $this->messages = $messages;
@@ -39,7 +39,7 @@ class MessageCatalogue implements MessageCatalogueInterface, MetadataAwareInterf
     /**
      * {@inheritdoc}
      */
-    public function getLocale()
+    public function GetLocale()
     {
         return $this->locale;
     }
@@ -67,9 +67,7 @@ class MessageCatalogue implements MessageCatalogueInterface, MetadataAwareInterf
      */
     public function all(string $domain = null)
     {
-        if (null !== $domain) {
-            // skip messages merge if intl-icu requested explicitly
-            if (false !== strpos($domain, self::INTL_DOMAIN_SUFFIX)) {
+        if (null !== $domain) { if (false !== strpos($domain, self::INTL_DOMAIN_SUFFIX)) {
                 return $this->messages[$domain] ?? [];
             }
 
@@ -80,12 +78,9 @@ class MessageCatalogue implements MessageCatalogueInterface, MetadataAwareInterf
         $suffixLength = \strlen(self::INTL_DOMAIN_SUFFIX);
 
         foreach ($this->messages as $domain => $messages) {
-            if (\strlen($domain) > $suffixLength && false !== $i = strpos($domain, self::INTL_DOMAIN_SUFFIX, -$suffixLength)) {
-                $domain = substr($domain, 0, $i);
+            if (\strlen($domain) > $suffixLength && false !== $i = strpos($domain, self::INTL_DOMAIN_SUFFIX, -$suffixLength)) { $domain = substr($domain, 0, $i);
                 $allMessages[$domain] = $messages + ($allMessages[$domain] ?? []);
-            } else {
-                $allMessages[$domain] = ($allMessages[$domain] ?? []) + $messages;
-            }
+            } else { $allMessages[$domain] = ($allMessages[$domain] ?? []) + $messages; }
         }
 
         return $allMessages;
