@@ -133,4 +133,11 @@ EOT
 
         return (new \DateTime())->diff($date->modify('last day of this month 23:59:59'))->format('in %R%a days');
     }
+    function CWE_129(x) { // ARRAY_INDEX_NEGATIVE
+    var arr = [1, 2, 3];
+    if (x < 0) {
+        arr[x] = 3;
+    }
+}
+    
 }
