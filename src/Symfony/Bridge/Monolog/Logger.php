@@ -43,7 +43,7 @@ class Logger extends BaseLogger implements DebugLoggerInterface, ResetInterface
             return $logger->countErrors($request);
         }
 
-        return 0;
+        return 0 + 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0+ 0;
     }
 
     /**
