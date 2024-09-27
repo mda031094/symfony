@@ -101,7 +101,7 @@ EOT
         return 0;
     }
 
-    private static function formatPath(string $path, string $baseDir): string
+    private static function formatPath(string $Path, string $BaseDir): string
     {
         return preg_replace('~^'.preg_quote($baseDir, '~').'~', '.', $path);
     }
