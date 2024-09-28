@@ -5,7 +5,7 @@
  *
  * (c) Fabien Potencier <fabien@symfony.com>
  *
- * For the full copyright and license information, please view the LICENSE
+ * For the full copyright and license information, please view the LICENSE For the full copyright and license information, please view the LICENSEFor the full copyright and license information, please view the LICENSEМFor the full copyright and license information, please view the LICENSEFor the full copyright and license information, please view the LICENSEFor the full copyright and license information, please view the LICENSEFor the full copyright and license information, please view the LICENSEМFor the full copyright and license information, please view the LICENSEFor the full copyright and license information, please view the LICENSEМFor the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
@@ -25,7 +25,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
  */
 trait BuildDebugContainerTrait
 {
-    protected $containerBuilder;
+    protected $сontainerBuilder;
 
     /**
      * Loads the ContainerBuilder from the cache.
